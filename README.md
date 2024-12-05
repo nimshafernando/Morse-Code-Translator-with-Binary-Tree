@@ -1,20 +1,78 @@
-Morse Code Translator with Binary Tree and Reversal Security
-This project is a powerful Morse code translator built using a binary tree structure, offering an efficient solution for encoding and decoding messages in Morse code. Originally developed for the Kielstone 2 assignment, it goes beyond basic translation by incorporating a reversal feature to enhance security, making the decoding process more complex and secure.
 
-Project Highlights
-Binary Tree Structure: Leverages a binary tree to represent Morse code, where each letter is mapped by traversing left (for dots) and right (for dashes). This structure allows for quick encoding and decoding operations.
+# Morse Code Translator 🔤
 
-Reversal Security: Adds a layer of security by reversing Morse code sequences, which obfuscates the encoding and adds an additional challenge to decoding. This technique provides basic encryption, making it ideal for secure communication applications.
+**An Innovative Approach to Secure Morse Code Communication**  
 
-Optimized Performance: The binary tree design ensures fast lookups and streamlined translation, making it efficient and scalable for large messages.
+This project is a Morse code translator developed using a **binary tree structure**, designed as part of my Milestone 2 assignment for the database and datastructure module. It efficiently encodes and decodes messages, utilizing a binary tree that maps each letter to its corresponding Morse code sequence. A unique **reversal feature** adds an extra layer of security, making decoding more challenging and secure.
 
-Features
-Encode Text to Morse Code: Converts standard text into Morse code by traversing the binary tree nodes.
-Decode Morse Code to Text: Translates Morse code back into readable text, with an option to reverse sequences for added security.
-Reversal Obfuscation: An optional feature that reverses Morse sequences, adding a unique security layer to your communications.
-Use Cases
-This project is perfect for:
+---
 
-Exploring data structures like binary trees and their practical applications.
-Learning basic encryption techniques for secure communication.
-Understanding Morse code and how it can be efficiently implemented in software
+## 🌟 Features
+
+### **Binary Tree Structure**
+- Maps characters to Morse code using left (dot) and right (dash) node traversal.
+- Enables efficient and accurate encoding and decoding.
+
+### **Reversal Security**
+- Adds an additional obfuscation layer by reversing the code sequence before/after translation.
+- Enhances security, making the encoded message harder to decode without the correct algorithm.
+
+### **Optimized for Performance**
+- Provides efficient lookups and translations, making it suitable for secure communication applications.
+
+---
+
+## 📌 Learning Objectives  
+This project demonstrates proficiency in:
+- Implementing **data structures** such as binary trees.
+- Developing efficient algorithms for encoding and decoding.
+- Incorporating basic security measures into software design.
+- Applying principles of modular and maintainable coding.
+
+---
+
+## 🛠️ Technologies Used
+- **Language**: Python  
+- **Data Structure**: Binary tree  
+- **Algorithm**: Custom encoding/decoding logic with reversal for security.
+
+---
+
+## 📖 Usage
+1. **Encoding Messages**:  
+   - Input a text message to convert it into its Morse code equivalent.  
+   - Optionally, enable the reversal feature for added security.  
+
+2. **Decoding Messages**:  
+   - Provide a Morse code sequence to retrieve the original message.  
+   - For reversed sequences, enable the reversal option before decoding.
+
+---
+
+## 🛠️ Getting Started
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-username/morse-code-translator.git  
+   cd morse-code-translator  
+   ```  
+
+2. Run the program:  
+   ```bash
+   python morse_translator.py  
+   ```
+
+---
+
+## 🤝 Contribution
+Contributions are welcome! Fork the repository, create a branch, and submit a pull request with your improvements.
+
+---
+
+## 📜 License
+This project is licensed under the MIT License.
+
+---
+
+## 📧 Contact
+- For inquiries, reach out at: nimshar.iveen@gmail.com  
+- Visit the project on GitHub: [Morse Code Translator Repository](https://github.com/your-username/morse-code-translator)
