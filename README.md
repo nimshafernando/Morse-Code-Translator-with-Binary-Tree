@@ -1,70 +1,119 @@
 
 # Morse Code Translator 🔤
 
-**An Innovative Approach to Secure Morse Code Communication**  
+**An Innovative Approach to Secure Morse Code Communication**
 
-This project is a Morse code translator developed using a **binary tree structure**, designed as part of my Milestone 2 assignment for the database and datastructure module. It efficiently encodes and decodes messages, utilizing a binary tree that maps each letter to its corresponding Morse code sequence. A unique **reversal feature** adds an extra layer of security, making decoding more challenging and secure.
+This project is a Morse Code Translator developed as part of the Milestone 2 assignment for the Databases and Data Structures module. The system uses a **binary tree structure** for efficient Morse code encoding and decoding, with added features like **message reversal** for enhanced security. The project demonstrates expertise in implementing data structures, algorithmic thinking, and security measures.
 
 ---
 
 ## 🌟 Features
 
 ### **Binary Tree Structure**
-- Maps characters to Morse code using left (dot) and right (dash) node traversal.
-- Enables efficient and accurate encoding and decoding.
+- Maps Morse code sequences to characters using left (dot) and right (dash) node traversal.
+- Supports efficient encoding and decoding operations.
 
 ### **Reversal Security**
-- Adds an additional obfuscation layer by reversing the code sequence before/after translation.
-- Enhances security, making the encoded message harder to decode without the correct algorithm.
+- Reverses the Morse code message before or after translation to add obfuscation and improve security.
 
 ### **Optimized for Performance**
-- Provides efficient lookups and translations, making it suitable for secure communication applications.
+- Decoding and encoding operations are performed in \(O(k)\), where \(k\) is the Morse code length for each character.
 
----
-
-## 📌 Learning Objectives  
-This project demonstrates proficiency in:
-- Implementing **data structures** such as binary trees.
-- Developing efficient algorithms for encoding and decoding.
-- Incorporating basic security measures into software design.
-- Applying principles of modular and maintainable coding.
+### **Validation**
+- Ensures input contains only valid Morse code symbols (`.`, `-`, `/`, spaces).
+- Provides error messages for empty, null, or invalid inputs.
 
 ---
 
 ## 🛠️ Technologies Used
-- **Language**: Python  
-- **Data Structure**: Binary tree  
-- **Algorithm**: Custom encoding/decoding logic with reversal for security.
+- **Programming Language**: Java
+- **Data Structures**: Binary tree, stack
+- **Algorithm**: Custom encoding/decoding with a reversal feature for security
 
 ---
 
-## 📖 Usage
-1. **Encoding Messages**:  
-   - Input a text message to convert it into its Morse code equivalent.  
-   - Optionally, enable the reversal feature for added security.  
+## 📌 Getting Started
 
-2. **Decoding Messages**:  
-   - Provide a Morse code sequence to retrieve the original message.  
-   - For reversed sequences, enable the reversal option before decoding.
+### **Prerequisites**
+- Java Development Kit (JDK) installed
+- Text editor or IDE (e.g., IntelliJ IDEA, Eclipse)
+- Morse code data files (`character_codes.txt`, `sample_code.txt`)
 
----
-
-## 🛠️ Getting Started
-1. Clone the repository:  
+### **Installation**
+1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/morse-code-translator.git  
-   cd morse-code-translator  
-   ```  
+   git clone https://github.com/your-username/morse-code-translator.git
+   cd morse-code-translator
+   ```
+2. Ensure the required input files (`character_codes.txt`, `sample_code.txt`) are in the project directory.
 
-2. Run the program:  
+3. Compile the Java files:
    ```bash
-   python morse_translator.py  
+   javac *.java
+   ```
+
+4. Run the application:
+   ```bash
+   java Milestone2App
    ```
 
 ---
 
+## 📖 Usage
+1. **Encoding Messages**:
+   - Input a text message to convert it into Morse code.
+   - Optionally reverse the code for added security.
+
+2. **Decoding Messages**:
+   - Provide a Morse code sequence to retrieve the original message.
+   - For reversed messages, enable the reversal option before decoding.
+
+3. **Printing the Morse Code Dictionary**:
+   - View all character-to-code mappings by traversing the binary tree.
+
+---
+
+## 🚀 Project Structure
+- **`TreeNode.java`**: Represents nodes in the Morse code tree.
+- **`StackNode.java`**: Supports in-order traversal without recursion.
+- **`MorseCodeTree.java`**: Handles tree creation, insertion, and traversal logic.
+- **`Milestone2App.java`**: Main application class for encoding, decoding, and managing input/output.
+
+---
+
+## 🔧 Algorithms and Implementation Details
+
+### **Binary Tree for Morse Code**
+- **Insertion**: Characters are added by traversing the tree based on dots (left) and dashes (right).
+- **Decoding**: Each Morse code sequence is decoded by traversing from the root to the corresponding node.
+
+### **Message Reversal**
+- Adds security by reversing the message (e.g., `... --- ...` becomes `... --- ...` in reverse).
+- Reversal is performed in-place for efficiency.
+
+### **Validation**
+- Ensures the input is not null, empty, or contains invalid characters.
+
+### **Time Complexity**
+- **Encoding/Decoding**: \(O(k)\) per character.
+- **Reversal**: \(O(m)\), where \(m\) is the length of the Morse code message.
+
+---
+
+## 🧪 Testing
+
+### **Test Cases**
+| **Test Case**                      | **Input**                                    | **Expected Output**                                       | **Result**  |
+|------------------------------------|---------------------------------------------|-----------------------------------------------------------|-------------|
+| Valid Morse Code                   | `... --- ...`                               | Decoded: "SOS"                                           | Pass        |
+| Empty Input                        | (empty)                                     | Error: "The Morse code message is empty."                | Pass        |
+| Invalid Characters                 | `... --- @@@`                               | Error: "Invalid characters in the message."              | Pass        |
+| Valid Morse Code with Reversal     | `... --- ...` (reversed)                    | Decoded: "SOS"                                           | Pass        |
+
+---
+
 ## 🤝 Contribution
-Contributions are welcome! Fork the repository, create a branch, and submit a pull request with your improvements.
+Contributions are welcome! Fork the repository, make changes, and submit a pull request.
 
 ---
 
@@ -74,5 +123,5 @@ This project is licensed under the MIT License.
 ---
 
 ## 📧 Contact
-- For inquiries, reach out at: nimshar.iveen@gmail.com  
-- Visit the project on GitHub: [Morse Code Translator Repository](https://github.com/your-username/morse-code-translator)
+- **Email**: nimsha.riveen@gmail.com
+- **GitHub**: [Morse Code Translator Repository](https://github.com/your-username/morse-code-translator)
