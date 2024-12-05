@@ -5,7 +5,7 @@
 
 This project is a Morse Code Translator developed as part of the Milestone 2 assignment for the Databases and Data Structures module. The system uses a **binary tree structure** for efficient Morse code encoding and decoding, with added features like **message reversal** for enhanced security. The project demonstrates expertise in implementing data structures, algorithmic thinking, and security measures.
 
----
+----
 
 ## 🌟 Features
 
