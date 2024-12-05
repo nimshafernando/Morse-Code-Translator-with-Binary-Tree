@@ -124,4 +124,3 @@ This project is licensed under the MIT License.
 
 ## 📧 Contact
 - **Email**: nimsha.riveen@gmail.com
-- **GitHub**: [Morse Code Translator Repository](https://github.com/your-username/morse-code-translator)
